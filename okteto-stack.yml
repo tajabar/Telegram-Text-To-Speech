@@ -1,0 +1,10 @@
+services:
+  drone-vc-p:
+    build: .
+    environment:
+      TELEGRAM_TOKEN: $TELEGRAM_TOKEN  
+      openai: $openai  
+      elevenlabs: $elevenlabs 
+    resources:
+      cpu: 1000m
+      memory: 3Gi
